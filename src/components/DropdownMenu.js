@@ -54,7 +54,9 @@ class DropdownMenu extends React.Component {
       default:
         link = "";
     }
-    window.location.href = "http://localhost:3000" + "/" + link;
+    // window.location.href = "http://localhost:3000" + "/" + link;
+    window.location.href = "https://ojwebsite-ed80f.web.app" + "/" + link;
+
     this.handleClose();
   }
 
