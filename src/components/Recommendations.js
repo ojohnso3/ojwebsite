@@ -1,6 +1,7 @@
 import React from "react"
 import Bookshelf from './Bookshelf.js'; 
 import Watchlist from './Watchlist.js'; 
+import Button from '@material-ui/core/Button';
 
 class Recommendations extends React.Component {
 
@@ -25,9 +26,21 @@ class Recommendations extends React.Component {
         {/* <h1>Olivia's Media Recommendations</h1> */}
         {/* {this.state.watchlist ? <h1>MY WATCHLIST</h1> : <h1>MY BOOKSHELF</h1>} */}
 
-        <div>
-          <button onClick={() => this.handleRecType(false)}>Bookshelf</button>
-          <button onClick={() => this.handleRecType(true)}>Watchlist</button>
+        <div id="buttons">
+          <Button 
+            variant="contained" 
+            disabled={!this.state.watchlist}
+            color="default"
+            onClick={() => this.handleRecType(false)}
+            >
+              Bookshelf</Button>
+          <Button 
+          variant="contained" 
+          disabled={this.state.watchlist}
+          color="default"
+          onClick={() => this.handleRecType(true)}
+            >
+            Watchlist</Button>
         </div>
 
         {this.state.watchlist ? <Watchlist/> : <Bookshelf/>}

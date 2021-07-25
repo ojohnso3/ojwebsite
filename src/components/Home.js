@@ -1,36 +1,33 @@
 import React from "react"
 import '../css/Home.css';
+import About from './About'; 
 
 class Home extends React.Component {
 
   render() {
     return (
       <div>
-        <h1 id="welcome">Hey! I'm Olivia, and I'm a CS major at Brown University.</h1>
+        <div id="home">
+          <h1 id="welcome">Hey! I'm Olivia, and I study Computer Science at Brown University.</h1>
 
-        <div id="container">
-          <div id="profile">
-            <img id="profile-pic" src="images/dunntackle.jpg"></img>
+          <div id="container">
+            <div id="profile">
+              <img id="profile-pic" src="images/oj.jpg"></img>
+            </div>
+
+            <div id="bio">
+              <ul>
+                <li className="bio-text"><b>Computer Science Student</b> at Brown (2018-).</li>
+                <li className="bio-text"><b>Software Engineer</b> at Strongsuit (2020-21).</li>
+                <li className="bio-text"><b>Co-Founder & COO</b> of Aloe Vision (2021-).</li>
+                <li className="bio-text"><b>Captain</b> of Brown Club Soccer (2021-).</li>
+                <li className="bio-text"><b>Teaching Assistant</b> for Intro CS course (2019).</li>
+              </ul> 
+            </div>
           </div>
-
-          <div id="bio">
-            <ul>
-              <li className="bio-text">Computer Science at Brown.</li>
-              <li className="bio-text">Software Engineer at Strongsuit.</li>
-              <li className="bio-text">Co-founder & COO of Aloe Vision.</li>
-              <li className="bio-text">Captain of Brown Club Soccer.</li>
-              <li className="bio-text">Teaching Assistant for Intro CS course.</li>
-            </ul> 
-          </div>
-        </div>
-
-        <div id="contacts">
-            <a href="images/resume.png" target="_blank"><img className="contact-image" src="images/resume.png"></img></a>
-            <a href="https://www.linkedin.com/in/ojohnson23/" target="_blank"><img className="contact-image" src="images/linkedin.png"></img></a>
-            <a href="https://github.com/ojohnso3" target="_blank"><img className="contact-image" src="images/github.png"></img></a>
         </div>
         
-
+      {/* <About/> */}
       </div>
     )
   }

@@ -9,7 +9,10 @@ import Projects from './components/Projects.js';
 import Recommendations from './components/Recommendations.js'; 
 import NoComponentFound from './components/NoComponentFound'; 
 
+import DropdownMenu from './components/DropdownMenu';
+
 function App() {
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -21,7 +24,8 @@ function App() {
           <div className="navigation">
             <Link to="/" id="name-header">OLIVIA JOHNSON</Link>
 
-            <button id="nav-dropbutton">Burger</button>
+            <DropdownMenu
+            />
 
             <div id="nav-links">
               <Link to="/" className="nav-link">HOME</Link>
@@ -42,6 +46,8 @@ function App() {
         </Switch>
 
       </BrowserRouter>
+
+      <div id="copyright">Copyright © 2021 Olivia Johnson. All rights reserved.</div>
 
     </div>
   );

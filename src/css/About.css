@@ -1,23 +1,18 @@
-#home {
-  margin-bottom: 10vh;
-}
-
-#welcome {
-  background-color: white;
+#fullabout {
   width: 80vw;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
   margin-left: 10vw;
-  border-radius: 20px;
+  margin-right: 10vw;
 }
 
-#container {
+#lessabout {
+  background-color: white !important;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 5vh;
+  text-align: left !important;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  width: 80vw;
-  margin-left: 10vw;
 }
 
 #profile {
@@ -37,42 +32,40 @@
   border-radius: 20px;
 }
 
-#bio {
+#contacts {
   background-color: white;
-  height: 50vh;
-  width: 80vw;
-  margin-left: 10vw;
+  height: 10vh;
+  width: 40vw;
+  margin-left: 20vw;
   border-radius: 20px;
+  margin-top: 5vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.bio-text {
-  font-size: 20px;
-  padding: 20px;
-  text-align: left;
+.contact-image {
+  height: 10vh;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
-/* li::before {
-  content: "::before";
-  background: lightgray;
-  border-radius: 1ch;
-  padding-inline: 1ch;
-  margin-inline-end: 1ch;
-} */
 
 
 @media only screen and (min-width: 320px) and (max-width: 479px){
-  #container {
+  #lessabout {
+    padding: 20px;
+    margin-top: 5vh;
+    text-align: left !important;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 80vw;
-    margin-left: 10vw;
+    /* align-items: center; */
+    justify-content: space-between;
   }
 
   #profile {
     background-color: white;
-    width: 80vw;
+    width: 70vw;
     border-radius: 20px;
   }
 
@@ -85,10 +78,11 @@
     border-radius: 20px;
   }
 
-  #bio {
-    margin-left: 0vw !important;
-    margin-top: 5vh;
-    height: 60vh !important;
+  #contacts {
+    width: 60vw;
+    margin-left: 10vw;
+    height: 20vh;
+    display: block;
   }
 
 }
