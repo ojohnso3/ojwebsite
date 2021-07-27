@@ -4,6 +4,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
 import '../App.css';
+import { Link } from 'react-router-dom'; 
 
 
 
@@ -92,24 +93,26 @@ class DropdownMenu extends React.Component {
             },
           }}
         >
-          {options.map((option) => (
-            <MenuItem key={option} selected={option === 'None'} onClick={() => this.handleLink(option)}>
-              {option}
+          <Link to="/" className="menu-link">
+            <MenuItem key={'home'} selected={false} onClick={this.handleClose}>
+              HOME
             </MenuItem>
-          ))}
-
-          {/* <MenuItem key={'home'} selected={false} onClick={this.handleClose}>
-              <Link to="/" className="nav-link">HOME</Link>
-          </MenuItem>
-          <MenuItem key={'about'} selected={false} onClick={this.handleClose}>
-              <Link to="/about" className="nav-link">ABOUT ME</Link>
-          </MenuItem>
-          <MenuItem key={'about'} selected={false} onClick={this.handleClose}>
-              <Link to="/about" className="nav-link">ABOUT ME</Link>
-          </MenuItem>
-          <MenuItem key={'about'} selected={false} onClick={this.handleClose}>
-              <Link to="/about" className="nav-link">ABOUT ME</Link>
-          </MenuItem> */}
+          </Link>
+          <Link to="/about" className="menu-link">
+            <MenuItem key={'about'} selected={false} onClick={this.handleClose}>
+              ABOUT
+            </MenuItem>
+          </Link>
+          <Link to="/projects" className="menu-link">
+            <MenuItem key={'projects'} selected={false} onClick={this.handleClose}>
+              PROJECTS
+            </MenuItem>
+          </Link>
+          <Link to="/recs" className="menu-link">
+            <MenuItem key={'recs'} selected={false} onClick={this.handleClose}>
+              RECOMMENDATIONS
+            </MenuItem>
+          </Link>
         </Menu>
       </div>
     );
