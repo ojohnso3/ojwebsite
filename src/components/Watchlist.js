@@ -8,9 +8,30 @@ class Watchlist extends React.Component {
       <div>
         <h1>MY WATCHLIST</h1>
 
-        <p>I love shows. Movies. Films. More more more more. Please tell me more please thanks.</p>
+        <p id="book-intro">Ever since becoming a huge Pixar fan, I have been greatly inspired by film and television.
+          <br/>Below are some of the movies/shows that *. 
+          <br/>What else should I watch!</p>
 
-        <img className="rec-images" src="images/imaydestroyyou.jpg"></img>
+        <div id="bookshelf">
+          <img className="rec-images" src="images/destroy.jpg"></img>
+          <img className="rec-images" src="images/arrival.jpg"></img>
+          <img className="rec-images" src="images/got.jpg"></img>
+        </div>
+
+        <div id="bookshelf">
+          <img className="rec-images" src="images/jojo.jpg"></img>
+          <img className="rec-images" src="images/parasite.jpg"></img>
+          <img className="rec-images" src="images/walle.jpeg"></img>
+          {/* <img className="rec-images" src="images/avatar.jpg"></img> */}
+        </div>
+
+        <div id="bookshelf">
+          <img className="rec-images" src="images/westworld.jpg"></img>
+          <img className="rec-images" src="images/princess.jpg"></img>
+          <img className="rec-images" src="images/fleabag.jpg"></img>
+        </div>
+        
+
 
       </div>
     )

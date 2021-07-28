@@ -103,9 +103,11 @@ class Project extends React.Component {
               NEXT</Button></Link>
         </div>
         
-
         <p>{this.state.description}</p>
 
+        <img className="phones" src="images/aloe.png"></img>
+        <img className="phones" src="images/iphone2.jpeg"></img>
+        <img className="phones" src="images/iphone2.JPG"></img>
         {/* <img className="rec-images" src={this.state.img || "images/oj.jpg"}></img> */}
 
       </div>

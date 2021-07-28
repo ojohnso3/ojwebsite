@@ -73,8 +73,7 @@ class Projects extends React.Component {
           
         </div>
       
-        {/* <img className="phones" src="images/iphone2.jpeg"></img>
-        <img className="phones" src="images/iphone2.JPG"></img> */}
+        
         
 
       </div>

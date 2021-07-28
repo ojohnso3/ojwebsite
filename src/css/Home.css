@@ -45,6 +45,11 @@
   border-radius: 20px;
 }
 
+#bio-list {
+  list-style: none;
+  padding-left: 0;
+}
+
 .bio-text {
   font-size: 20px;
   padding: 20px;

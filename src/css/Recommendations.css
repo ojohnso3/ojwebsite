@@ -8,6 +8,17 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+#book-intro {
+  width: 80vw;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin-left: 10vw;
+  font-size: 18px;
+  line-height: 2;
 }
 
 #buttons {
@@ -24,6 +35,13 @@
   #buttons {
     width: 70vw;
     margin-left: 15vw;
+  }
+
+  #book-intro {
+    margin-left: 5vw;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 5vh;
   }
 
 }
