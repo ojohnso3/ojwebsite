@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Home from './components/Home.js'; 
 import About from './components/About.js'; 
 import Projects from './components/Projects.js'; 
+import Project from './components/Project.js'; 
 import Recommendations from './components/Recommendations.js'; 
 import NoComponentFound from './components/NoComponentFound'; 
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/project/:id" component={Project} />
           <Route exact path="/recs" component={Recommendations} />
           <Route exact path="*" component={NoComponentFound} />
         </Switch>

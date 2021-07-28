@@ -1,0 +1,77 @@
+#project-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.phones {
+  border-radius: 30px;
+  height: 60vh;
+  margin-left: 10px;
+}
+
+.project {
+  background-color: white;
+  height: 55vh;
+  width: 25vw;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.project:hover {
+  background-color: rgba(255, 255, 255, 0.884);
+  cursor: pointer;
+}
+
+.img:hover {
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+.text {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.description {
+  text-align: left !important;
+}
+
+.img {
+  background-color: white;
+  height: 20vh;
+  border-radius: 20px;
+}
+
+#fc-img {
+  width: 15vw;
+}
+
+#mnist-img {
+  height: 15vh !important;
+}
+
+#gifs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 25vw;
+}
+
+#return-button {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
