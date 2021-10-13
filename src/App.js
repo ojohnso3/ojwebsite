@@ -5,6 +5,8 @@ import './App.css';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'; 
 import Home from './components/Home.js'; 
 import About from './components/About.js'; 
+import Experience from './components/Experience.js'; 
+import Job from './components/Job.js'; 
 import Projects from './components/Projects.js'; 
 import Project from './components/Project.js'; 
 import Recommendations from './components/Recommendations.js'; 
@@ -18,8 +20,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
 
-      {/* <img id="orange-icon" src="images/orangeicon.png"></img> */}
-
         <div className="header">
           
           <div className="navigation">
@@ -31,6 +31,7 @@ function App() {
             <div id="nav-links">
               <Link to="/" className="nav-link">HOME</Link>
               <Link to="/about" className="nav-link">ABOUT ME</Link>
+              <Link to="/experience" className="nav-link">EXPERIENCE</Link>
               <Link to="/projects" className="nav-link">PROJECTS</Link>
               <Link to="/recs" className="nav-link">RECOMMENDATIONS</Link>
             </div>                             
@@ -41,6 +42,8 @@ function App() {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} />
+          <Route exact path="/experience" component={Experience} />
+          <Route exact path="/job/:id" component={Job} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/project/:id" component={Project} />
           <Route exact path="/recs" component={Recommendations} />

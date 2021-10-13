@@ -11,11 +11,12 @@ import { Link } from 'react-router-dom';
 const options = [
   'HOME',
   'ABOUT ME',
+  'EXPERIENCE',
   'PROJECTS',
   'RECOMMENDATIONS',
 ];
 
-const ITEM_HEIGHT = 48;
+const ITEM_HEIGHT = 60; //48
 
 class DropdownMenu extends React.Component {
 
@@ -47,15 +48,18 @@ class DropdownMenu extends React.Component {
         link = "about";
         break;
       case 2:
-        link = "projects";
+        link = "experience";
         break;
       case 3:
+        link = "projects";
+        break;
+      case 4:
         link = "recs";
         break;
       default:
         link = "";
     }
-    // window.location.href = "http://localhost:3000" + "/" + link;
+
     window.location.href = "https://ojwebsite-ed80f.web.app" + "/" + link;
 
     this.handleClose();
@@ -101,6 +105,11 @@ class DropdownMenu extends React.Component {
           <Link to="/about" className="menu-link">
             <MenuItem key={'about'} selected={false} onClick={this.handleClose}>
               ABOUT
+            </MenuItem>
+          </Link>
+          <Link to="/experience" className="menu-link">
+            <MenuItem key={'experience'} selected={false} onClick={this.handleClose}>
+              EXPERIENCE
             </MenuItem>
           </Link>
           <Link to="/projects" className="menu-link">

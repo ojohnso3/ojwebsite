@@ -1,6 +1,6 @@
 import React from "react"
 import '../css/Home.css';
-import About from './About'; 
+import { Link } from 'react-router-dom'; 
 
 class Home extends React.Component {
 
@@ -11,9 +11,9 @@ class Home extends React.Component {
           <h1 id="welcome">Hey! I'm Olivia, and I study Computer Science at Brown University.</h1>
 
           <div id="container">
-            <div id="profile">
+            <Link to="/about" id="profile">
               <img id="profile-pic" src="images/oj.jpg"></img>
-            </div>
+            </Link>
 
             <div id="bio">
               <ul id="bio-list">
