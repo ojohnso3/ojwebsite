@@ -42,7 +42,7 @@ class About extends React.Component {
         </div>
 
         <div id="contacts">
-          <a href="images/icons/resume.png" target="_blank"><img className="contact-image" src="images/icons/resume.png"></img></a>
+          <a href="images/resume.pdf" target="_blank"><img className="contact-image" src="images/icons/resume.png"></img></a>
           <a href="https://www.linkedin.com/in/ojohnson23/" target="_blank"><img className="contact-image" src="images/icons/linkedin.png"></img></a>
           <a href="https://github.com/ojohnso3" target="_blank"><img className="contact-image" src="images/icons/github.png"></img></a>
           <a href="mailto:olivia_johnson@brown.edu" target="_blank"><img className="contact-image" src="images/icons/email.png"></img></a>
